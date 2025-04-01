@@ -1,5 +1,11 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+  // Ensure input is valid
+  if (typeof s1 !== "string" || typeof s2 !== "string") {
+    return -1;
+  }
+  
+  // Convert both strings to lowercase and find index
+  return s1.toLowerCase().indexOf(s2.toLowerCase());
 }
 
 // Please do not change the code below
